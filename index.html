@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="components.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="components.js"></script>
+    <script src="helper.js"></script>
+    <script src="script.js"></script>
+   </head>
+  <body onload="init()">
+    <div id="banner" class="container center">
+
+      <img id="bk" src="bk.png">
+      <img src="text.png">
+      <img id="bk" src="bk.png">
+   
+      
+    </div>
+    
+    <div class="container subbanner">
+
+      <div>
+        <div class="container">
+          <!--Dog--> <span class="quickAccess" style="display:flex; ">
+          <a class="button" onclick="filterByCats()"  id="cat"> <h3>Cats</h3> </a>
+          </span> <!--Cat--> <span class="quickAccess" style="display:flex; ">
+          <a class="button" onclick="filterByDogs()"  id="dog"> <h3> Dog </h3> </a>
+          </span> <!--Other Animals--> <span class="quickAccess" style="display:flex; ">
+          <a class="button" onclick="filterByOthers()" id="other"> <h3>Other Animals</h3> </a>
+          </span> <!--Supplies--> <span class="quickAccess" style="display:flex; ">
+          <a class="button" onclick="filterBySupplies()" id="supply"> <h3>Supplies</h3> </a>
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <!--Search box and drop down-->
+    
+    <div class="container drop down">
+      
+      <div class="dropdown">
+      <button class="dropbtn">Trending Items</button>
+      <div class="dropdown-content">
+      <a href="#" onclick="getdogsupply()" id="dogsupply" style="background-color:#d6edf5;">Popular Dog Items</a>
+      <a href="#" onclick="getcatsupply()" id="catsupply"style="background-color: #bbcdd3;">Must Buy Cat Items</a>
+      <a href="#" onclick="getrabbitsupply()" id="rabbitsupply"style="background-color:#a8bcc2">Choice Rabbit Items</a>
+    </div>
+    </div>
+      
+    <input style="flex:1;text-align:right;" type="text" id="breed" placeholder="Search by breed" class="placeholder"> &nbsp; 
+      
+  
+      <input type="button" value="Search" class="button1" id="input" onclick="getResults()" style="font-size:20px;"> 
+
+      </div>
+    
+
+    <div class="container">
+  <div id="leftpanel" style="flex:3">
+    
+    
+    
+      <div class="card" id="rightPanel" style="flex:3">
+        <h1>Output</h1>
+        <div id="result"></div>
+        <div id="output"></div>
+
+
+    
+    
+    <div id="output" class="container" >
+
+    </div>
+        
+    <div id="footer" class="container center">
+      <h3>Questions? Call us at 999-888-6666</h3>
+    </div>  
+  </body>
+</html>

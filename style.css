@@ -1,0 +1,275 @@
+html,body{
+  margin:0 auto;
+  font-family:Arial;
+}
+.container{
+  display:flex;
+  padding:10px;
+  justify: content center;
+  align-items:center;
+}
+
+.quickAccess{
+  display:flex;
+  margin:20px;
+  height:60px;
+  justify-content:center;
+  align-items:center;
+  
+}
+
+
+.center{
+  justify-content:center;
+  align-items:center;
+}
+
+nav{
+  background-color:cornflowerblue;
+}
+nav a{
+  color:black;
+  padding:10px;
+  flex:1;
+  text-decoration:none;
+  text-align:center;
+}
+nav a:hover{
+  color:#f2f0ff;
+}
+.subbanner{
+  justify-content:center;
+  background-image:url("https://t3.ftcdn.net/jpg/02/98/20/18/360_F_298201895_5bPjYW2qPWJ52Wg40H80d8hCAHsPIfpE.jpg");
+  background-size: auto;
+  background-repeat:repeat-x;
+  height:150px;
+}
+#banner{
+  background-color:#71abad;
+  color:white;
+  font-size:120%;
+}
+#footer{
+  background-color:#5F9EA0;
+  color:white;
+  /*position:fixed;*/
+  left: 0;
+  right: 0;
+  bottom:0px;
+}
+ 
+.card{
+  flex:1;
+  margin:10px;
+  padding:10px;
+  border:1px solid gray;
+  text-align:center;
+  box-shadow:2px 2px 2px #42769e;
+  border-radius:2px;
+  perspective: 1000px;
+}
+
+.highlight{centert-style:italic;
+  color:blue;
+}
+.heading{
+  font-weight:bold;
+}
+.button{
+  text-decoration:none;
+  background-color:white;
+  color:#696f9b;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align:center;
+  justify-content:center;
+  border-radius:4px;
+  width: 100px;
+  height:90px;
+  padding:6px;
+  box-shadow:2px 2px 2px #42769e;
+}
+
+.button:hover{
+  background-color:#f2f0ff;
+  width: 110px;
+  height:100px;
+}
+
+.button1{
+  text-decoration:none;
+  background-color:white;
+  color:#696f9b;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align:center;
+  justify-content:center;
+  border-radius:5px;
+  padding:10px;
+  box-shadow:2px 2px 2px #42769e;
+}
+
+::placeholder{
+  color:#36bfb1;
+  font-size:20px;
+}
+
+:placeholder-shown{
+  height:30px;
+}
+
+::-webkit-input-placeholder{
+  color:#257e76;
+}
+
+.button1:hover{
+  background-color:#f2f0ff;
+}
+
+.fitted{
+  max-width:280px;
+  min-width:280px;
+  max-height:300px;
+  min-height:300px;
+  border-radius:20px;
+  perspective:1000px;
+}
+
+.card img{
+  height:160px;
+}
+
+.card img:hover{
+  height:160px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width:100%;
+  height:100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.fitted:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  transition: .2s ease-in-out;
+}
+
+
+.flip-card-front, .flip-card-back {
+  position:absolute;
+  width:100%;
+  height:100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  font-family: "Lucida Console", "Courier New", monospace;
+  align-items: center;
+  text-align: center;
+  
+  
+}
+
+
+
+#output{
+  display:flex;
+  flex-wrap:wrap;
+   
+}
+
+#dog{
+  flex:3;
+}
+
+#cat{
+  flex:3;
+}
+
+#other{
+  flex:3;
+}
+
+#supply{
+  flex:3;
+}
+
+
+.dropbtn {
+  background-color: #4bdddd;
+  color: white;
+  padding: 16px;
+  margin:10px;
+  font-size: 20px;
+  border: 2px solid grey;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #bbcdd3;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #66CDAA;
+}
+
+#category{
+  font-size:18px;
+  text-align:center;
+}
+
+.search{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.desc{
+  height:80px;
+}
+
+#bk{
+  width:300px;
+}
+
+#bk:hover{
+  width:350px; 
+}
+
+
+
